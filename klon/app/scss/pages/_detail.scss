@@ -1,0 +1,35 @@
+.type-detail{
+    .p-info-wrapper{
+        display:flex;
+        flex-direction:column;
+        .p-short-description{
+            order:-20;
+        }
+        .tiande-info{
+            order:-19;
+            margin:20px 0;
+            border:1px solid #f7f7f7;
+            .tiande-info__item{
+                display:flex;
+                width:100%;
+                &:nth-child(even){
+                    div{
+                        background-color:#f7f7f7;
+                        
+                    }
+                }
+
+                .tiande-info__label{
+                    min-width:150px;
+                }
+                .tiande-info__value,
+                .tiande-info__label{
+                    padding:10px 5px;
+                }
+                .tiande-info__value{
+                    width:calc(100% - 150px);
+                }
+            }
+        }
+    }
+}

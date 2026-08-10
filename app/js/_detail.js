@@ -1,3 +1,0 @@
-if($('.type-detail').length){
-    
-}

@@ -1,0 +1,49 @@
+.top-navigation-tools{
+    #mh-top-points{
+        display:inline;
+        background:#6e9d96;
+        color:#fff;
+        padding:5px;
+        border-radius:5px;
+    }
+}
+
+#totalPoints{
+    margin:20px 0;
+    .mh-order-points{
+        &>div{
+            display:flex;
+            width:100%;
+            &:nth-child(even){
+                background-color:#f7f7f7;
+            }
+            &.superSale{
+                padding:10px 5px;
+                strong{
+                    margin-left:3px;
+                }
+            }
+        }
+        p{
+            padding:10px 5px;
+            a{
+                color:var(--color-primary);
+                text-decoration:underline;
+                &:hover{
+                    text-decoration:none;
+                }
+            }
+        }
+        .tiande-info__label{
+            min-width:150px;
+        }
+        .tiande-info__value,
+        .tiande-info__label{
+            padding:10px 5px;
+        }
+        .tiande-info__value{
+            font-weight:600;
+            width:calc(100% - 150px);
+        }
+    }
+}
