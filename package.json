@@ -1,0 +1,27 @@
+{
+    "name": "hrncal-frontend",
+    "version": "1.0.1",
+    "description": "Working from localhost",
+    "main": "gulpfile.js",
+    "dependencies": {
+        "autoprefixer": "^10.4.17",
+        "browser-sync": "^2.27.11",
+        "cssnano": "^5.1.15",
+        "gulp-concat": "^2.6.1",
+        "gulp-if": "^3.0.0",
+        "gulp-postcss": "^9.0.1",
+        "gulp-sass": "^5.1.0",
+        "gulp-sftp-up4": "^0.1.8",
+        "gulp-sourcemaps": "^3.0.0",
+        "gulp-terser": "^2.1.0",
+        "postcss": "^8.4.33",
+        "sass": "^1.45.2",
+        "yargs": "^17.7.2"
+    },
+    "devDependencies": {
+        "gulp": "^4.0.2",
+        "inflight": "^1.0.6",
+        "is-accessor-descriptor": "^3.0.5",
+        "is-data-descriptor": "^2.1.3"
+    }
+}
