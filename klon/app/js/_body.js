@@ -152,7 +152,7 @@
         if (nextDiscount !== null) {
             html +=
                 '<div class="superSale">' +
-                    'Do ' + nextDiscount + ' % slevy chybí ' +
+                    'Do ' + nextDiscount + ' % bonusové slevy chybí ' +
                     '<strong>' +
                         round(Math.max(0, nextLimit - total)) +
                         ' bodů' +
