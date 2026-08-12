@@ -1,0 +1,144 @@
+$c-green: #9eba8f;
+$c-red: #8c4959;
+$c-blue: #ecd9cd;
+/*
+.messages {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    max-width: 700px;
+    width: 100%;
+    background-color: transparent;
+    left: 50px;
+    bottom: 50px;
+    top: auto;
+    right: auto;
+
+    @media (max-width: 767px) {
+        left: 0;
+        max-width: 100%;
+        bottom: 0;
+    }
+    .msg-wrapper {
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        max-width: 700px;
+        width: 100%;
+        background-color: transparent;
+        left: 50px;
+        bottom: 50px;
+        top: auto;
+        right: auto;
+        @media (max-width: 767px) {
+            left: 0;
+            bottom: 0;
+            max-width: 100%;
+        }
+    }
+    .container {
+        width: 100%;
+    }
+    .msg {
+        background-color: #fff !important;
+        border: 0 !important;
+        color: #000000;
+        font-size: 16px;
+        font-weight: 600;
+        position: relative;
+        padding-left: 87px;
+        min-height: 100px;
+        display: flex;
+        align-items: center;
+        @media (min-width: 768px) {
+            font-size: 18px;
+        }
+        a {
+            color: #000;
+            text-decoration: underline;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        &::before {
+            width: 7px;
+            height: 68px;
+            border-radius: 5px;
+            content: "";
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &::after {
+            position: absolute;
+            left: 50px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            border-radius: 40px;
+            font-family: "Shoptet";
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            content: "\e913";
+            color: #fff;
+        }
+        &.msg-success,
+        &.msg-notice {
+            &::before {
+                background-color: $c-green;
+            }
+            &::after {
+                background-color: $c-green;
+            }
+        }
+        &.msg-error {
+            &::before {
+                background-color: $c-red;
+            }
+            &::after {
+                background-color: $c-red;
+            }
+        }
+        &.msg-warning,
+        &.msg-info {
+            &::before {
+                background-color: $c-blue;
+            }
+            &::after {
+                background-color: $c-blue;
+            }
+        }
+    }
+}*/
+
+.site-msg {
+    &.information {
+        background-image: url("data:image/svg+xml,%0A%3Csvg width='110' height='110' viewBox='0 0 110 110' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M58.4814 78H51.5049V46H58.4814V78Z' fill='%236e9d96'/%3E%3Cpath d='M58.4814 40.5596H51.5049V33.2002H58.4814V40.5596Z' fill='%236e9d96'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M55 0C85.3757 0 110 24.6243 110 55C110 85.3757 85.3757 110 55 110C24.6243 110 0 85.3757 0 55C0 24.6243 24.6243 0 55 0ZM55 5C27.3858 5 5 27.3858 5 55C5 82.6142 27.3858 105 55 105C82.6142 105 105 82.6142 105 55C105 27.3858 82.6142 5 55 5Z' fill='%236e9d96'/%3E%3C/svg%3E%0A");
+
+        background-repeat: no-repeat;
+        background-position: center left 10px;
+        background-size: auto 35px;
+        padding: 10px 25px 10px 55px;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        opacity: 1;
+        z-index: 100;
+        @media (max-width: 767px) {
+            width: 100%;
+
+        }
+        .text {
+            font-size: 16px;
+        }
+        p {
+            font-size: 18px;
+            margin: 0 0 10px 0;
+            &:last-of-type {
+                margin: 0;
+            }
+        }
+    }
+}

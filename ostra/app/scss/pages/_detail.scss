@@ -1,0 +1,112 @@
+.type-detail{
+    .p-detail-inner{
+        h1{
+            .p-code{
+                display:none;
+            }
+        }
+    }
+    .p-info-wrapper{
+        display:flex;
+        flex-direction:column;
+        .p-short-description{
+            order:-20;
+            
+        }
+        p[data-testid="productCardDescr"]{
+            order:-19;
+        }
+        .tiande-info{
+            order:-18;
+            margin:20px 0;
+            border:1px solid #f7f7f7;
+            .tiande-info__item{
+                display:flex;
+                width:100%;
+                &:nth-child(even){
+                    div{
+                        background-color:#f7f7f7;
+                        
+                    }
+                }
+
+                .tiande-info__label{
+                    min-width:150px;
+                }
+                .tiande-info__value,
+                .tiande-info__label{
+                    padding:10px 5px;
+                }
+                .tiande-info__value{
+                    width:calc(100% - 150px);
+                }
+            }
+        }
+        .availability-value{
+            order:-17;
+        }
+        .detail-parameters{
+            order:-16;
+        }
+        .p-final-price-wrapper{
+            display:flex;
+            flex-direction:column;
+            gap:10px;
+            order:-15;
+            .price-standard{
+                text-decoration:none;
+                order:-20;
+                margin:0;
+                &>span{
+                    text-decoration:none;
+                    color:#000;
+                }
+                .custom-price-label{
+                    min-width:150px;
+                    color:#000;
+                    display: inline-block;
+
+                }
+            }
+            strong{
+                &.price-final{
+                    order:20;
+                    margin:10px 0 0 0;
+                   // font-size:14px;
+                    .custom-price-label{
+                        min-width:150px;
+                        color:#000;
+                        display: inline-block;
+                    }
+                }
+            }
+            .price-save{
+                order:-18;
+                color:#000;
+                .custom-save-label{
+                    min-width:150px;
+                    color:#000;
+                    display: inline-block;
+                }
+            }
+            .price-measure{
+                order:-17;
+                line-height: 1;
+                margin: 0;
+                span{
+                    color:#000;
+                    &.sr-only{
+                        min-width:150px;
+                        margin:0;
+                        padding:0;
+                        position:relative;
+                        width:auto;
+                        height:auto;
+                        color:#000;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
